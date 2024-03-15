@@ -9,10 +9,18 @@
   <ItemGroup>
     <None Remove="Context\" />
     <None Remove="Mappings\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Abstractions\" />
+    <None Remove="Repositories\Concretes\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
     <Folder Include="Mappings\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Abstractions\" />
+    <Folder Include="Repositories\Concretes\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.17" />
