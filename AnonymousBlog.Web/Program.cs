@@ -1,11 +1,10 @@
-﻿using System;
-using AnonymousBlog.Data.Context;
-using AnonymousBlog.Data.Extensions;
-using Microsoft.EntityFrameworkCore;
+﻿using AnonymousBlog.Data.Extensions;
+using AnonymousBlog.Service.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.LoadDataLayerExtension(builder.Configuration);
+builder.Services.LoadServiceLayerExtension();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

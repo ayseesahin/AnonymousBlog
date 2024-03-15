@@ -1104,6 +1104,20 @@
         "runtime": {
           "bin/placeholder/AnonymousBlog.Entity.dll": {}
         }
+      },
+      "AnonymousBlog.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AnonymousBlog.Data": "1.0.0",
+          "AnonymousBlog.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AnonymousBlog.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AnonymousBlog.Service.dll": {}
+        }
       }
     }
   },
@@ -2974,11 +2988,18 @@
       "type": "project",
       "path": "../AnonymousBlog.Entity/AnonymousBlog.Entity.csproj",
       "msbuildProject": "../AnonymousBlog.Entity/AnonymousBlog.Entity.csproj"
+    },
+    "AnonymousBlog.Service/1.0.0": {
+      "type": "project",
+      "path": "../AnonymousBlog.Service/AnonymousBlog.Service.csproj",
+      "msbuildProject": "../AnonymousBlog.Service/AnonymousBlog.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "AnonymousBlog.Data >= 1.0.0",
+      "AnonymousBlog.Entity >= 1.0.0",
+      "AnonymousBlog.Service >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.17"
     ]
   },
@@ -3011,6 +3032,12 @@
           "projectReferences": {
             "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Data/AnonymousBlog.Data.csproj": {
               "projectPath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Data/AnonymousBlog.Data.csproj"
+            },
+            "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Entity/AnonymousBlog.Entity.csproj": {
+              "projectPath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Entity/AnonymousBlog.Entity.csproj"
+            },
+            "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Service/AnonymousBlog.Service.csproj": {
+              "projectPath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Service/AnonymousBlog.Service.csproj"
             }
           }
         }

@@ -79,3 +79,5 @@
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Core.pdb
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Entity.pdb
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/obj/Debug/net7.0/AnonymousBlog.Web.csproj.CopyComplete
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Service.dll
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Service.pdb
