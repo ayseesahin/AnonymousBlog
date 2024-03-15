@@ -13,6 +13,7 @@
     <None Remove="Repositories\Abstractions\" />
     <None Remove="Repositories\Concretes\" />
     <None Remove="Extensions\" />
+    <None Remove="UnitOfWorks\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
@@ -21,13 +22,10 @@
     <Folder Include="Repositories\Abstractions\" />
     <Folder Include="Repositories\Concretes\" />
     <Folder Include="Extensions\" />
+    <Folder Include="UnitOfWorks\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.17" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.17">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.17">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
