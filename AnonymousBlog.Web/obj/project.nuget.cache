@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QZS8164C3U4+98/ms5HikSg4gGUGoRW7uG7x9wiF1yGprPCZFKvOXvG3kYN4eLVzLPc85AdLudFn/bFBGr6uGQ==",
+  "dgSpecHash": "uJgvw2aKBPfAIS+WCAhJWXXKi/MpSDswtW3wA/8MNOxLilMdHHWbkzwgLEenu2XfzuTEOtkYQVJJVN4D2fQAmw==",
   "success": true,
   "projectFilePath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/AnonymousBlog.Web.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/Users/aysenursahin/.nuget/packages/microsoft.entityframeworkcore.design/7.0.17/microsoft.entityframeworkcore.design.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.17/microsoft.entityframeworkcore.relational.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.17/microsoft.entityframeworkcore.sqlserver.7.0.17.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.17/microsoft.entityframeworkcore.tools.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

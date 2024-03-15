@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using AnonymousBlog.Entity.Entities;
-
+using System.Reflection;
 
 namespace AnonymousBlog.Data.Context
 {
@@ -20,6 +20,10 @@ namespace AnonymousBlog.Data.Context
         public DbSet<Image> Images { get; set; }
 
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
 
     }
 }
