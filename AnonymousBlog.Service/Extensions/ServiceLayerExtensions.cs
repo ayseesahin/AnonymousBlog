@@ -1,6 +1,6 @@
-﻿using AnonymousBlog.Service.Services.Abstractions;
+﻿using System.Reflection;
+using AnonymousBlog.Service.Services.Abstractions;
 using AnonymousBlog.Service.Services.Concrete;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AnonymousBlog.Service.Extensions
@@ -9,7 +9,10 @@ namespace AnonymousBlog.Service.Extensions
 	{
         public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
         {
+            var assembly = Assembly.GetExecutingAssembly();
             services.AddScoped<IArticleService, ArticleService>();
+
+            services.AddAutoMapper(assembly);
             return services;
         }
     }

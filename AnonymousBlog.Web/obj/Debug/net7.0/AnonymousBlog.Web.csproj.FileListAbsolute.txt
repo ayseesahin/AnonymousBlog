@@ -81,3 +81,4 @@
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/obj/Debug/net7.0/AnonymousBlog.Web.csproj.CopyComplete
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Service.dll
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AnonymousBlog.Service.pdb
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/AutoMapper.dll

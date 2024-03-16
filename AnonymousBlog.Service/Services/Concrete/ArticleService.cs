@@ -1,22 +1,28 @@
 ﻿using System;
 using AnonymousBlog.Data.UnitOfWorks;
+using AnonymousBlog.Entity.DTOs.Articles;
 using AnonymousBlog.Entity.Entities;
 using AnonymousBlog.Service.Services.Abstractions;
+using AutoMapper;
 
 namespace AnonymousBlog.Service.Services.Concrete
 {
     public class ArticleService : IArticleService
     {
         private readonly IUnitOfWork unitOfWork;
+        private readonly IMapper mapper;
 
-        public ArticleService(IUnitOfWork unitOfWork)
+        public ArticleService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
 
-        public async Task<List<Article>> GetAllArticlesAsync()
+        public async Task<List<ArticleDto>> GetAllArticlesAsync()
         {
-            return await unitOfWork.GetRepository<Article>().GetAllAsync();
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync();
+            var map = mapper.Map<List<ArticleDto>>(articles);
+            return map;
         }
     }
 }

@@ -11,15 +11,22 @@
     <None Remove="Services\Abstractions\" />
     <None Remove="Services\Concrete\" />
     <None Remove="Extensions\" />
+    <None Remove="AutoMapper\" />
+    <None Remove="AutoMapper\Artices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Services\Abstractions\" />
     <Folder Include="Services\Concrete\" />
     <Folder Include="Extensions\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="AutoMapper\Artices\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnonymousBlog.Entity\AnonymousBlog.Entity.csproj" />
     <ProjectReference Include="..\AnonymousBlog.Data\AnonymousBlog.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
   </ItemGroup>
 </Project>

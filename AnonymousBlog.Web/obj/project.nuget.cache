@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fuLV4LMbiQf5UpHsEPsBNkiDOThNqhzSzDmXTowWecb24Z6yE+PgQavat/CE1GcNHKeJip8kyK8gFB/t/mHT7Q==",
+  "dgSpecHash": "35Pu6ShOyjEOJKEjtpMrwbBynDhfXEucTVdU64NMh8ygH7UiVZ37Mc4LipqV62ebG2zYL53nhbi6MV/g2OVIaw==",
   "success": true,
   "projectFilePath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/AnonymousBlog.Web.csproj",
   "expectedPackageFiles": [
+    "/Users/aysenursahin/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
