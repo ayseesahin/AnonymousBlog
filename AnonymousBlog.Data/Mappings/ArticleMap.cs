@@ -23,6 +23,8 @@ namespace AnonymousBlog.Data.Mappings
                 ImageId = Guid.Parse("3b21b170-ada6-439d-ac46-7f3ca44fc051"),
                 CreatedBy = "Admin Time",
                 CreatedDate = DateTime.Now,
+                IsDeleted = false,
+                UserId = Guid.Parse("5c5f587c-b90b-462d-a34c-89a30660b79e"),
             },
              new Article
              {
@@ -34,7 +36,8 @@ namespace AnonymousBlog.Data.Mappings
                  ImageId = Guid.Parse("f5658d11-19f7-44d8-8393-8262e7d849aa"),
                  CreatedBy = "Admin Time",
                  CreatedDate = DateTime.Now,
-
+                 IsDeleted = false,
+                 UserId = Guid.Parse("1d83a60b-be44-4796-955c-186b1c9eaf5e"),
              });
         }
     }

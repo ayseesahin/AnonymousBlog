@@ -56,7 +56,8 @@ namespace AnonymousBlog.Data.Mappings
                 LastName = "Şahin",
                 PhoneNumberConfirmed = true,
                 EmailConfirmed = true,
-                SecurityStamp = Guid.NewGuid().ToString()
+                SecurityStamp = Guid.NewGuid().ToString(),
+                ImageId = Guid.Parse("3b21b170-ada6-439d-ac46-7f3ca44fc051")
             };
             superadmin.PasswordHash = CreatePasswordHash(superadmin, "123456");
 
@@ -72,7 +73,8 @@ namespace AnonymousBlog.Data.Mappings
                 LastName = "Nur",
                 PhoneNumberConfirmed = false,
                 EmailConfirmed = false,
-                SecurityStamp = Guid.NewGuid().ToString()
+                SecurityStamp = Guid.NewGuid().ToString(),
+                ImageId = Guid.Parse("f5658d11-19f7-44d8-8393-8262e7d849aa")
             };
             admin.PasswordHash = CreatePasswordHash(admin, "123456");
 
