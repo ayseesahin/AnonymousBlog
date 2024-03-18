@@ -20,4 +20,3 @@ namespace AnonymousBlog.Entity.Entities
         public AppUser user { get; set;}
     }
 }
-

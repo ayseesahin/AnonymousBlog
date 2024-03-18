@@ -28,4 +28,3 @@ namespace AnonymousBlog.Data.Mappings
         }
     }
 }
-

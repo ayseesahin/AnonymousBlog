@@ -12,4 +12,3 @@ namespace AnonymousBlog.Entity.Entities
         public ICollection<AppUser> Users { get; set; }
     }
 }
-

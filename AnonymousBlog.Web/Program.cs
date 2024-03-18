@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.LoadDataLayerExtension(builder.Configuration);
 builder.Services.LoadServiceLayerExtension();
+builder.Services.AddSession();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -24,8 +25,8 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 
 builder.Services.ConfigureApplicationCookie(config =>
 {
-    config.LoginPath = new PathString("/Admin/Auth/Login");
-    config.LogoutPath = new PathString("/Admin/Auth/Logout");
+    config.LoginPath = new PathString("/Admin/Auth/Login"); 
+    config.LogoutPath = new PathString("/Admin/Auth/Logout"); 
     config.Cookie = new CookieBuilder
     {
         Name = "AnonymousBlog",
@@ -58,14 +59,14 @@ app.UseAuthorization();
 
 
 app.UseEndpoints(endpoints =>
-{
-    endpoints.MapAreaControllerRoute(
-        name: "Admin",
-        areaName: "Admin",
-        pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
-        );
-    endpoints.MapDefaultControllerRoute();
-});
+ {
+     endpoints.MapAreaControllerRoute(
+         name: "Admin",
+         areaName: "Admin",
+         pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
+         );
+     endpoints.MapDefaultControllerRoute();
+ });
 
 app.Run();
 

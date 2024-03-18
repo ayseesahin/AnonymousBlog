@@ -1,5 +1,4 @@
-﻿using System;
-using AnonymousBlog.Entity.Entities;
+﻿using AnonymousBlog.Entity.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -42,4 +41,3 @@ namespace AnonymousBlog.Data.Mappings
         }
     }
 }
-

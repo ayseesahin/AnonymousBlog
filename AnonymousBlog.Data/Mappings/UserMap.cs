@@ -31,7 +31,7 @@ namespace AnonymousBlog.Data.Mappings
 
             // The relationships between User and other entity types
             // Note that these relationships are configured with no navigation properties
-
+            
             // Each User can have many UserClaims
             builder.HasMany<AppUserClaim>().WithOne().HasForeignKey(uc => uc.UserId).IsRequired();
 
@@ -88,4 +88,3 @@ namespace AnonymousBlog.Data.Mappings
         }
     }
 }
-

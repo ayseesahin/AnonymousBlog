@@ -14,7 +14,6 @@ namespace AnonymousBlog.Data.Mappings
 
             // Maps to the AspNetUserClaims table
             builder.ToTable("AspNetUserClaims");
-
         }
     }
 }
