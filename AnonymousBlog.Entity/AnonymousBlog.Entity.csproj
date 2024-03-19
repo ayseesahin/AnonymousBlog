@@ -10,11 +10,13 @@
     <None Remove="Entities\" />
     <None Remove="DTOs\" />
     <None Remove="DTOs\Articles\" />
+    <None Remove="DTOs\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\Articles\" />
+    <Folder Include="DTOs\Users\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnonymousBlog.Core\AnonymousBlog.Core.csproj" />
