@@ -18,9 +18,9 @@ namespace AnonymousBlog.Service.Services.Concrete
             this.mapper = mapper;
         }
 
-        public async Task<List<ArticleDto>> GetAllArticlesAsync()
+        public async Task<List<ArticleDto>> GetAllArticlesWithCategoryNonDeletedAsync()
         {
-            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync();
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.IsDeleted, x => x.Category);
             var map = mapper.Map<List<ArticleDto>>(articles);
             return map;
         }

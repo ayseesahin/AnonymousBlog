@@ -31,6 +31,7 @@
     <None Remove="Areas\Admin\Views\Shared\" />
     <None Remove="Areas\Admin\Views\Home\" />
     <None Remove="Areas\Admin\Views\Auth\" />
+    <None Remove="Areas\Admin\Views\Article\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -41,5 +42,6 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\Auth\" />
+    <Folder Include="Areas\Admin\Views\Article\" />
   </ItemGroup>
 </Project>
