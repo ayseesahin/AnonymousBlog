@@ -18,6 +18,20 @@ namespace AnonymousBlog.Service.Services.Concrete
             this.mapper = mapper;
         }
 
+        public async Task CreateArticleAsync(ArticleAddDto articleAddDto)
+        {
+            var userId = Guid.Parse("5c5f587c-b90b-462d-a34c-89a30660b79e");
+            var article = new Article
+            {
+                Title = articleAddDto.Title,
+                Content = articleAddDto.Content,
+                CategoryId = articleAddDto.CategoryId,
+                UserId = userId
+            };
+            await unitOfWork.GetRepository<Article>().AddAsync(article);
+            await unitOfWork.SaveAsync();
+        }
+
         public async Task<List<ArticleDto>> GetAllArticlesWithCategoryNonDeletedAsync()
         {
             var articles = await unitOfWork.GetRepository<Article>().GetAllAsync(x => !x.IsDeleted, x => x.Category);
