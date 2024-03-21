@@ -23,7 +23,7 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
             this.articleService = articleService;
         }
 
-        public async  Task<IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var article = await articleService.GetAllArticlesWithCategoryNonDeletedAsync();
             return View(article);
