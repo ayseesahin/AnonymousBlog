@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "EsGys7/V4oQrp3U+uOmZ7Bnz2Wa6ofrlXfeHUQ2u67MkoXOmxzNLkmwm/GHHxlAPHgRwsOMON1G4oHumAfuNtQ==",
+  "dgSpecHash": "yLFfK5p447k9b0AiAiw6u5C44yE4WC+ETk2+PqmDSRZCBSGLW8yq6EKel7wtqiG/a+3sqLUFL44Gb9K2MZAF+A==",
   "success": true,
   "projectFilePath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/AnonymousBlog.Web.csproj",
   "expectedPackageFiles": [
     "/Users/aysenursahin/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.17/microsoft.aspnetcore.cryptography.internal.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.17/microsoft.aspnetcore.cryptography.keyderivation.7.0.17.nupkg.sha512",

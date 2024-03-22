@@ -417,3 +417,6 @@
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
 /Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/obj/Debug/net7.0/AnonymousBlog.Web.MvcApplicationPartsAssemblyInfo.cs
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/FluentValidation.dll
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/FluentValidation.AspNetCore.dll
+/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll

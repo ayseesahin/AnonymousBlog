@@ -1,6 +1,10 @@
-﻿using System.Reflection;
+﻿using System.Globalization;
+using System.Reflection;
+using AnonymousBlog.Service.FluentValidations;
 using AnonymousBlog.Service.Services.Abstractions;
 using AnonymousBlog.Service.Services.Concrete;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AnonymousBlog.Service.Extensions
@@ -14,8 +18,18 @@ namespace AnonymousBlog.Service.Extensions
             services.AddScoped<ICategoryService, CategoryService>();
 
             services.AddAutoMapper(assembly);
+
+            services.AddControllersWithViews().AddFluentValidation(opt =>
+            {
+                opt.RegisterValidatorsFromAssemblyContaining<ArticleValidator>();
+                opt.DisableDataAnnotationsValidation = true;
+                opt.ValidatorOptions.LanguageManager.Culture = new CultureInfo("tr");
+            });
+
             return services;
         }
     }
+
+
 }
 
