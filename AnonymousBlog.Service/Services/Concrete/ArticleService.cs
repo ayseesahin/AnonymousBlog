@@ -21,13 +21,9 @@ namespace AnonymousBlog.Service.Services.Concrete
         public async Task CreateArticleAsync(ArticleAddDto articleAddDto)
         {
             var userId = Guid.Parse("5c5f587c-b90b-462d-a34c-89a30660b79e");
-            var article = new Article
-            {
-                Title = articleAddDto.Title,
-                Content = articleAddDto.Content,
-                CategoryId = articleAddDto.CategoryId,
-                UserId = userId
-            };
+            var imageId = Guid.Parse("3b21b170-ada6-439d-ac46-7f3ca44fc051");
+            var article = new Article(articleAddDto.Title, articleAddDto.Content, userId,articleAddDto.CategoryId, imageId);
+
             await unitOfWork.GetRepository<Article>().AddAsync(article);
             await unitOfWork.SaveAsync();
         }

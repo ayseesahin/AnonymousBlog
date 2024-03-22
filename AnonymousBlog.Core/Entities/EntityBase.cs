@@ -15,3 +15,4 @@ namespace AnonymousBlog.Core.Entities
         public virtual bool IsDeleted { get; set; } = false;
     }
 }
+
