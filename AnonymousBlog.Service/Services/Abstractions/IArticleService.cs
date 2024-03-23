@@ -10,8 +10,8 @@ namespace AnonymousBlog.Service.Services.Abstractions
 		Task<ArticleDto> GetArticleWithCategoryNonDeletedAsync(Guid articleId);
 
         Task CreateArticleAsync(ArticleAddDto articleAddDto);
-		Task UpdateArticleAsync(ArticleUpdateDto articleUpdateDto);
-		Task SafeDeleteArticleAsync(Guid articleId);
+		Task<string> UpdateArticleAsync(ArticleUpdateDto articleUpdateDto);
+		Task<string> SafeDeleteArticleAsync(Guid articleId);
     }
 }
 

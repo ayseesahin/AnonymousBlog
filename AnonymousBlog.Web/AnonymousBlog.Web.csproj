@@ -22,6 +22,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.17" />
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Areas\" />
@@ -33,6 +34,7 @@
     <None Remove="Areas\Admin\Views\Home\" />
     <None Remove="Areas\Admin\Views\Auth\" />
     <None Remove="Areas\Admin\Views\Article\" />
+    <None Remove="ResultMessages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -44,5 +46,6 @@
     <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\Auth\" />
     <Folder Include="Areas\Admin\Views\Article\" />
+    <Folder Include="ResultMessages\" />
   </ItemGroup>
 </Project>

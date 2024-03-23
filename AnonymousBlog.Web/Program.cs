@@ -3,6 +3,7 @@ using AnonymousBlog.Data.Extensions;
 using AnonymousBlog.Entity.Entities;
 using AnonymousBlog.Service.Extensions;
 using Microsoft.AspNetCore.Identity;
+using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,13 @@ builder.Services.LoadDataLayerExtension(builder.Configuration);
 builder.Services.LoadServiceLayerExtension();
 builder.Services.AddSession();
 // Add services to the container.
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+builder.Services.AddControllersWithViews()
+    .AddNToastNotifyToastr(new ToastrOptions()
+    {
+        PositionClass = ToastPositions.TopRight,
+        TimeOut = 3000,
+    })
+    .AddRazorRuntimeCompilation();
 
 
 builder.Services.AddIdentity<AppUser, AppRole>(opt =>
@@ -49,6 +56,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseNToastNotify();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSession();
