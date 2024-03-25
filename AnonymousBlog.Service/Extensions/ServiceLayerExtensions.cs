@@ -5,6 +5,7 @@ using AnonymousBlog.Service.Services.Abstractions;
 using AnonymousBlog.Service.Services.Concrete;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AnonymousBlog.Service.Extensions
@@ -16,6 +17,8 @@ namespace AnonymousBlog.Service.Extensions
             var assembly = Assembly.GetExecutingAssembly();
             services.AddScoped<IArticleService, ArticleService>();
             services.AddScoped<ICategoryService, CategoryService>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddAutoMapper(assembly);
 
