@@ -12,6 +12,8 @@
     <None Remove="DTOs\Articles\" />
     <None Remove="DTOs\Users\" />
     <None Remove="DTOs\Categories\" />
+    <None Remove="DTOs\Images\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
@@ -19,6 +21,8 @@
     <Folder Include="DTOs\Articles\" />
     <Folder Include="DTOs\Users\" />
     <Folder Include="DTOs\Categories\" />
+    <Folder Include="DTOs\Images\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnonymousBlog.Core\AnonymousBlog.Core.csproj" />

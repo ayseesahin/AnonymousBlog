@@ -1,6 +1,7 @@
 ﻿using System;
 using AnonymousBlog.Core.Entities;
 
+
 namespace AnonymousBlog.Entity.Entities
 {
 	public class Image : EntityBase
