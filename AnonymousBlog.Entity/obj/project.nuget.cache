@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "99SlbyyNl2XS+ad9kdTAzDSWpHk22+LCZEFAJxnZM/kPrutGXH90oPRyfGSiKY5E9aXYVPJ6ls8/9ZwBtd8gcg==",
+  "dgSpecHash": "wRnKGnRJ+os7Ts08zFI04+7yF7Xc+r1iJUPMD8lIPpkBhOXR/mKMXpycVdT2uOfi8SlOCjZWOcz88kXQsArYMA==",
   "success": true,
   "projectFilePath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Entity/AnonymousBlog.Entity.csproj",
   "expectedPackageFiles": [
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.17/microsoft.aspnetcore.cryptography.internal.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.17/microsoft.aspnetcore.cryptography.keyderivation.7.0.17.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
@@ -13,8 +17,12 @@
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.identity.stores/7.0.17/microsoft.extensions.identity.stores.7.0.17.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
-    "/Users/aysenursahin/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "/Users/aysenursahin/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

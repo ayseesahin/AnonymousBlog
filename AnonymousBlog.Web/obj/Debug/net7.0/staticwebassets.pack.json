@@ -25,6 +25,22 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/DENEME_792.png",
+      "PackagePath": "staticwebassets/images/article-images/DENEME_792.png"
+    },
+    {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/Deniyoruz_959.png",
+      "PackagePath": "staticwebassets/images/article-images/Deniyoruz_959.png"
+    },
+    {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/TESTediyoruz_309.png",
+      "PackagePath": "staticwebassets/images/article-images/TESTediyoruz_309.png"
+    },
+    {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/test1_805.png",
+      "PackagePath": "staticwebassets/images/article-images/test1_805.png"
+    },
+    {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/articleIndex.js",
       "PackagePath": "staticwebassets/js/articleIndex.js"
     },

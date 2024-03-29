@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "exa+465lrIlaJs5CFxw4m5m/NbLVOKWqLbtsXmCOfT66p0aPQS+jG+AugDX+FXEKFW6pXLkAMkdBjrYsZ1kNBg==",
+  "dgSpecHash": "U7hfgp7HXo05By17y7Y32n/f+jpy6FzOqG67G3UaNmLq4hVWNJaO/f5R8OfhZD5s9k4nKcei7sbnW0FQOeLu9A==",
   "success": true,
   "projectFilePath": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Service/AnonymousBlog.Service.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.hosting/2.2.7/microsoft.aspnetcore.hosting.2.2.7.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.hosting.server.abstractions/2.2.0/microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
-    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http/2.2.0/microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
+    "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http.extensions/2.2.0/microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "/Users/aysenursahin/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

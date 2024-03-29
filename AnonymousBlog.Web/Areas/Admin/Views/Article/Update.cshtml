@@ -1,10 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-@model ArticleUpdateDto
+﻿@model ArticleUpdateDto
 
 <div class="container-xxl flex-grow-1 container-p-y">
 
@@ -21,7 +15,7 @@
                     <div asp-validation-summary="ModelOnly"></div>
                     <div class="card-body">
                         <input type="hidden" asp-for="Id" />
-                        <div class="form-group">
+                        <div>
                             <label asp-for="CategoryId">Kategori</label>
                             <select itemid="categoryList" class="form-control mt-1" asp-for="CategoryId" asp-items="@(new SelectList(Model.Categories,"Id","Name"))"></select>
                             <span asp-validation-for="CategoryId" class="text-danger"></span>
@@ -38,6 +32,18 @@
                             <span asp-validation-for="Content" class="text-danger"></span>
 
                         </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label asp-for="Image.FileName" for="defaultFormControlInput" class="form-label d-block">Mevcut Resim</label>
+                                <img style="height:25em; width:25em;" class="mb-3" src="~/images/@Model.Image.FileName" alt="@Model.Title" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label asp-for="Photo" for="defaultFormControlInput" class="form-label ">Resim seçiniz</label>
+                                <input asp-for="Photo" accept="image/*" type="file" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+                                <span asp-validation-for="Photo" class="text-danger"></span>
+
+                            </div>
+                        </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block mt-3">Kaydet</button>
                         </div>
@@ -46,5 +52,5 @@
             </div>
         </div>
     </div>
-</div>
 
+</div> 
