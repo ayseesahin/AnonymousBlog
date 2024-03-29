@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets/js/articleIndex.js"
     },
     {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/categoryAdd.js",
+      "PackagePath": "staticwebassets/js/categoryAdd.js"
+    },
+    {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/categoryIndex.js",
       "PackagePath": "staticwebassets/js/categoryIndex.js"
     },
