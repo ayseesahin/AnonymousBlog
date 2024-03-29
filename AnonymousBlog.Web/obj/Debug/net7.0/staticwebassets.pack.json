@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/DENEME1000_754.png",
+      "PackagePath": "staticwebassets/images/article-images/DENEME1000_754.png"
+    },
+    {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/DENEME_792.png",
       "PackagePath": "staticwebassets/images/article-images/DENEME_792.png"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/articleIndex.js",
       "PackagePath": "staticwebassets/js/articleIndex.js"
+    },
+    {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/categoryIndex.js",
+      "PackagePath": "staticwebassets/js/categoryIndex.js"
     },
     {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/site.js",

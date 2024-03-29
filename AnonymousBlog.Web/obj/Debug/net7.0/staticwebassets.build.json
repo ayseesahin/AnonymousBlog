@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mXl7uywFD+wcUTPKQ4YQBjElKQgv9m1tSpVF+FDtAi4=",
+  "Hash": "Tjs8YTA8U+NvdOMTko/sc4TABkaJKcc1qoRMZr8vJ4k=",
   "Source": "AnonymousBlog.Web",
   "BasePath": "_content/AnonymousBlog.Web",
   "Mode": "Default",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "wwwroot/images/article-images/DENEME_792.png"
     },
     {
+      "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/DENEME1000_754.png",
+      "SourceId": "AnonymousBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/",
+      "BasePath": "_content/AnonymousBlog.Web",
+      "RelativePath": "images/article-images/DENEME1000_754.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/article-images/DENEME1000_754.png"
+    },
+    {
       "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/Deniyoruz_959.png",
       "SourceId": "AnonymousBlog.Web",
       "SourceType": "Discovered",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/articleIndex.js"
+    },
+    {
+      "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/categoryIndex.js",
+      "SourceId": "AnonymousBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/",
+      "BasePath": "_content/AnonymousBlog.Web",
+      "RelativePath": "js/categoryIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/categoryIndex.js"
     },
     {
       "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/site.js",
