@@ -23,19 +23,37 @@ namespace AnonymousBlog.Web.ResultMessages
 
         public static class Category
         {
-            public static string Add(string categoryTitle)
+            public static string Add(string categoryName)
             {
-                return $"{categoryTitle} başlıklı makale başarıyla eklenmiştir.";
+                return $"{categoryName} başlıklı makale başarıyla eklenmiştir.";
             }
 
-            public static string Update(string categoryTitle)
+            public static string Update(string categoryName)
             {
-                return $"{categoryTitle} başlıklı makale başarıyla güncellenmiştir.";
+                return $"{categoryName} başlıklı makale başarıyla güncellenmiştir.";
             }
 
-            public static string Delete(string categoryTitle)
+            public static string Delete(string categoryName)
             {
-                return $"{categoryTitle} başlıklı makale başarıyla silinmiştir.";
+                return $"{categoryName} başlıklı makale başarıyla silinmiştir.";
+            }
+        }
+
+        public static class User
+        {
+            public static string Add(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla eklenmiştir.";
+            }
+
+            public static string Update(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla güncellenmiştir.";
+            }
+
+            public static string Delete(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla silinmiştir.";
             }
         }
     }
