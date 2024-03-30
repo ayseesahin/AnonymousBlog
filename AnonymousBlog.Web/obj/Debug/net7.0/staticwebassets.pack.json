@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets/images/article-images/Deniyoruz_959.png"
     },
     {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/Sacmalaladik_644.png",
+      "PackagePath": "staticwebassets/images/article-images/Sacmalaladik_644.png"
+    },
+    {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/TESTediyoruz_309.png",
       "PackagePath": "staticwebassets/images/article-images/TESTediyoruz_309.png"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/userIndex.js",
+      "PackagePath": "staticwebassets/js/userIndex.js"
     },
     {
       "Id": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/lib/bootstrap/LICENSE",

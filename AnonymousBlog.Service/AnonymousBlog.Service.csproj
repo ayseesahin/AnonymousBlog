@@ -17,6 +17,7 @@
     <None Remove="FluentValidations\" />
     <None Remove="Helpers\" />
     <None Remove="Helpers\Images\" />
+    <None Remove="AutoMapper\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -29,6 +30,7 @@
     <Folder Include="FluentValidations\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Images\" />
+    <Folder Include="AutoMapper\Users\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnonymousBlog.Entity\AnonymousBlog.Entity.csproj" />

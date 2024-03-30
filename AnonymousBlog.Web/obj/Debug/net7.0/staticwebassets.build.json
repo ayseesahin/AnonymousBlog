@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UKW6+/J4Y9Vh6oNCqw+Huf6AHhnpwCXhbmwGj8c14OQ=",
+  "Hash": "yko4i4A0bvHjg6q42ghFTj9R7dtGbcGOa75aqMQdRc8=",
   "Source": "AnonymousBlog.Web",
   "BasePath": "_content/AnonymousBlog.Web",
   "Mode": "Default",
@@ -221,6 +221,23 @@
       "OriginalItemSpec": "wwwroot/images/article-images/Deniyoruz_959.png"
     },
     {
+      "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/Sacmalaladik_644.png",
+      "SourceId": "AnonymousBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/",
+      "BasePath": "_content/AnonymousBlog.Web",
+      "RelativePath": "images/article-images/Sacmalaladik_644.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/article-images/Sacmalaladik_644.png"
+    },
+    {
       "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/images/article-images/test1_805.png",
       "SourceId": "AnonymousBlog.Web",
       "SourceType": "Discovered",
@@ -321,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
+    },
+    {
+      "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/js/userIndex.js",
+      "SourceId": "AnonymousBlog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/",
+      "BasePath": "_content/AnonymousBlog.Web",
+      "RelativePath": "js/userIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/userIndex.js"
     },
     {
       "Identity": "/Users/aysenursahin/Projects/AnonymousBlog/AnonymousBlog.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",

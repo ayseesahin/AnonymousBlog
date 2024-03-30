@@ -36,6 +36,7 @@
     <None Remove="Areas\Admin\Views\Article\" />
     <None Remove="ResultMessages\" />
     <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Areas\Admin\Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -49,5 +50,6 @@
     <Folder Include="Areas\Admin\Views\Article\" />
     <Folder Include="ResultMessages\" />
     <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Areas\Admin\Views\User\" />
   </ItemGroup>
 </Project>

@@ -84,9 +84,7 @@ namespace AnonymousBlog.Service.Services.Concrete
                 article.ImageId = image.Id;
             }
 
-            article.Title = articleUpdateDto.Title;
-            article.Content = articleUpdateDto.Content;
-            article.CategoryId = articleUpdateDto.CategoryId;
+            mapper.Map(articleUpdateDto, article);
             article.ModifiedDate = DateTime.Now;
             article.ModifiedBy = userEmail;
 
