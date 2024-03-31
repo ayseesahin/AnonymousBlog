@@ -1,6 +1,7 @@
 ﻿using AnonymousBlog.Data.Context;
 using AnonymousBlog.Data.Extensions;
 using AnonymousBlog.Entity.Entities;
+using AnonymousBlog.Service.Describers;
 using AnonymousBlog.Service.Extensions;
 using Microsoft.AspNetCore.Identity;
 using NToastNotify;
@@ -27,6 +28,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
     opt.Password.RequireUppercase = false;
 })
     .AddRoleManager<RoleManager<AppRole>>()
+    .AddErrorDescriber<CustomIdentityErrorDescriber>()
     .AddEntityFrameworkStores<AppDbContext>()
     .AddDefaultTokenProviders();
 

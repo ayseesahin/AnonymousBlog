@@ -18,6 +18,7 @@
     <None Remove="Helpers\" />
     <None Remove="Helpers\Images\" />
     <None Remove="AutoMapper\Users\" />
+    <None Remove="Describers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -31,6 +32,7 @@
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Images\" />
     <Folder Include="AutoMapper\Users\" />
+    <Folder Include="Describers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnonymousBlog.Entity\AnonymousBlog.Entity.csproj" />
