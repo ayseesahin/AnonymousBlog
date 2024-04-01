@@ -19,6 +19,11 @@ namespace AnonymousBlog.Web.ResultMessages
             {
                 return $"{articleTitle} başlıklı makale başarıyla silinmiştir.";
             }
+
+            public static string UndoDelete(string articleTitle)
+            {
+                return $"{articleTitle} başlıklı makale başarıyla geri alınmıştır.";
+            }
         }
 
         public static class Category
@@ -36,6 +41,11 @@ namespace AnonymousBlog.Web.ResultMessages
             public static string Delete(string categoryName)
             {
                 return $"{categoryName} başlıklı makale başarıyla silinmiştir.";
+            }
+
+            public static string UndoDelete(string categoryName)
+            {
+                return $"{categoryName} başlıklı makale başarıyla geri alınmıştır.";
             }
         }
 

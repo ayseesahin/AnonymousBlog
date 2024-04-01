@@ -8,6 +8,8 @@ namespace AnonymousBlog.Service.Services.Abstractions
     {
         Task<List<ArticleDto>> GetAllArticlesWithCategoryNonDeletedAsync();
 
+        Task<List<ArticleDto>> GetAllArticlesWithCategoryDeletedAsync();
+
         Task CreateArticleAsync(ArticleAddDto articleAddDto);
 
         Task<ArticleDto> GetAllArticlesWithCategoryNonDeletedAsync(Guid articleId);
@@ -15,6 +17,9 @@ namespace AnonymousBlog.Service.Services.Abstractions
         Task<string> UpdateArticleAsync(ArticleUpdateDto articleUpdateDto);
 
         Task<string> SafeDeleteArticleAsync(Guid articleId);
+
+        Task<string> UndoDeleteArticleAsync(Guid articleId);
+
     }
 }
 

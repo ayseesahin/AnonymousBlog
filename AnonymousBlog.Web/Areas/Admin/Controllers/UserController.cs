@@ -91,7 +91,6 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Update(Guid userId)
         {
             var user = await userManager.FindByIdAsync(userId.ToString());
-
           
             var roles = await roleManager.Roles.ToListAsync();
 
@@ -130,8 +129,6 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
                         {
                             result.AddToIdentityModelState(this.ModelState);
                             return View(new UserUpdateDto { Roles = roles });
-
-
                         }
                     }
                     else
