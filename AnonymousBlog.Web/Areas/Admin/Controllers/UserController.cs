@@ -1,8 +1,11 @@
 ﻿using System.Data;
+using AnonymousBlog.Data.UnitOfWorks;
 using AnonymousBlog.Entity.DTOs.Articles;
 using AnonymousBlog.Entity.DTOs.Users;
 using AnonymousBlog.Entity.Entities;
+using AnonymousBlog.Entity.Enums;
 using AnonymousBlog.Service.Extensions;
+using AnonymousBlog.Service.Helpers.Images;
 using AnonymousBlog.Web.ResultMessages;
 using AutoMapper;
 using FluentValidation;
@@ -18,17 +21,23 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> userManager;
+        private readonly IUnitOfWork unitOfWork;
+        private readonly IImageHelper imageHelper;
         private readonly RoleManager<AppRole> roleManager;
+        private readonly SignInManager<AppUser> signInManager;
         private readonly IValidator<AppUser> validator;
         private readonly IMapper mapper;
         private readonly IToastNotification toast;
 
-        public UserController(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, IValidator<AppUser> validator, IMapper mapper, IToastNotification toast)
+        public UserController(UserManager<AppUser> userManager, IUnitOfWork unitOfWork, IImageHelper imageHelper, RoleManager<AppRole> roleManager, SignInManager<AppUser> signInManager, IValidator<AppUser> validator, IMapper mapper, IToastNotification toast)
         {
             this.userManager = userManager;
+            this.unitOfWork = unitOfWork;
             this.roleManager = roleManager;
+            this.imageHelper = imageHelper;
             this.validator = validator;
             this.mapper = mapper;
+            this.signInManager = signInManager;
             this.toast = toast;
         }
 
@@ -83,7 +92,7 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
                     return View(new UserAddDto { Roles = roles });
                 }
             }
-           
+
             return View(new UserAddDto { Roles = roles });
         }
 
@@ -91,7 +100,7 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
         public async Task<IActionResult> Update(Guid userId)
         {
             var user = await userManager.FindByIdAsync(userId.ToString());
-          
+
             var roles = await roleManager.Roles.ToListAsync();
 
             var map = mapper.Map<UserUpdateDto>(user);
@@ -159,7 +168,79 @@ namespace AnonymousBlog.Web.Areas.Admin.Controllers
             return NotFound();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var user = await userManager.GetUserAsync(HttpContext.User);
+            var getImage = await unitOfWork.GetRepository<AppUser>().GetAsync(x => x.Id == user.Id, x => x.Image);
+            var map = mapper.Map<UserProfileDto>(user);
+            map.Image.FileName = getImage.Image.FileName;
+
+            return View(map);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Profile(UserProfileDto userProfileDto)
+        {
+            var user = await userManager.GetUserAsync(HttpContext.User);
+
+            if (ModelState.IsValid)
+            {
+                var isVerified = await userManager.CheckPasswordAsync(user, userProfileDto.CurrentPassword);
+                if (isVerified && userProfileDto.NewPassword != null && userProfileDto.Photo != null)
+                {
+                    var result = await userManager.ChangePasswordAsync(user, userProfileDto.CurrentPassword, userProfileDto.NewPassword);
+                    if (result.Succeeded)
+                    {
+                        await userManager.UpdateSecurityStampAsync(user);
+                        await signInManager.SignOutAsync();
+                        await signInManager.PasswordSignInAsync(user, userProfileDto.NewPassword, true, false);
+
+                        user.FirstName = userProfileDto.FirstName;
+                        user.LastName = userProfileDto.LastName;
+                        user.PhoneNumber = userProfileDto.PhoneNumber;
+
+
+                        var imageUpload = await imageHelper.Upload($"{userProfileDto.FirstName}{userProfileDto.LastName}", userProfileDto.Photo, ImageType.User);
+                        Image image = new(imageUpload.FullName, userProfileDto.Photo.ContentType, user.Email);
+                        await unitOfWork.GetRepository<Image>().AddAsync(image);
+
+                        user.ImageId = image.Id;
+
+                        await userManager.UpdateAsync(user);
+
+                        await unitOfWork.SaveAsync();
+
+                        toast.AddSuccessToastMessage("Şifreniz ve Bilgileriniz Başarıyla Değiştirilmiştir.");
+                        return View();
+                    }
+                    else
+                        result.AddToIdentityModelState(ModelState); return View();
+
+                }
+                else if (isVerified && userProfileDto.Photo != null)
+                {
+                    await userManager.UpdateSecurityStampAsync(user);
+                    user.FirstName = userProfileDto.FirstName;
+                    user.LastName = userProfileDto.LastName;
+                    user.PhoneNumber = userProfileDto.PhoneNumber;
+
+                    var imageUpload = await imageHelper.Upload($"{userProfileDto.FirstName}{userProfileDto.LastName}", userProfileDto.Photo, ImageType.User);
+                    Image image = new(imageUpload.FullName, userProfileDto.Photo.ContentType, user.Email);
+                    await unitOfWork.GetRepository<Image>().AddAsync(image);
+
+                    user.ImageId = image.Id;
+
+                    await userManager.UpdateAsync(user);
+                    await unitOfWork.SaveAsync();
+
+                    toast.AddSuccessToastMessage("Bilgileriniz Başarıyla Değiştirilmiştir.");
+                    return View();
+                }
+                else
+                    toast.AddErrorToastMessage("Bilgileriniz Güncellenirken Bir Hata Oluştur."); return View();
+            }
+
+            return View();
+        }
     }
-
 }
-

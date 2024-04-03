@@ -21,8 +21,8 @@ namespace AnonymousBlog.Web.Areas.Admin.ViewComponents
         {
             var loggedInUser = await userManager.GetUserAsync(HttpContext.User);
             var map = mapper.Map<UserDto>(loggedInUser);
-
             var role = string.Join("", await userManager.GetRolesAsync(loggedInUser));
+
             map.Role = role;
 
             return View(map);
